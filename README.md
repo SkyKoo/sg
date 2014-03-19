@@ -1,6 +1,6 @@
 sg
 ==
-A simple but powerful c++ project called "sg" (a.k.a. "cfd") which makes your develop fast.
+A simple but powerful c++ project called "sgWrappers" (a.k.a. "cfd") which makes your develop fast.
 
 WE PROVIDE:
 
