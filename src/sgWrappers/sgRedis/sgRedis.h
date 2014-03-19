@@ -116,6 +116,24 @@ class SGRedis : public SGNonCopyable
         /********************************************************* STRINGS ********************************************************** */
         void set(const std::string &key, const std::string &val);
         std::string get(const std::string &key);
+        int64 append(const std::string &key, const std::string &val);
+        int64 decr(const std::string &key);
+        int64 decrby(const std::string &key);
+        int64 getbit(const std::string &key, int offset);
+        std::string getrange(const std::string &key, int start, int end);
+        std::string getset(const std::string &key, const std::string &val);
+        int64 incr(const std::string &key);
+        int64 incrby(const std::string &key, int val);
+        std::string incrbyfloat(const std::string &key, float val);
+        std::vector<std::string> mget(const std::vector<std::string> &keys);
+        void mset(const std::vector<std::string> &keys, const std::vector<std::string> &vals);
+        int64 msetnx(const std::vector<std::string> &keys, const std::vector<std::string> &vals);
+        void psetex(const std::string &key, int expire, const std::string &val);
+        int64 setbit(const std::string &key, int offset, int val);
+        void setex(const std::string &key, int expire, const std::string &val);
+        int64 setnx(const std::string &key, const std::string &val);
+        int64 setrange(const std::string &key, int start, const std::string &val);
+        int64 strlen(const std::string &key);
 
     private:
         redisContext *_rc;        
