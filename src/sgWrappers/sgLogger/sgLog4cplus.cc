@@ -41,7 +41,7 @@ namespace sg
         va_start(args, format); \
         vsnprintf(buf, sizeof(buf), format, args); \
         va_end(args); \
-        logger.forcedLog(logLevel, buf, filename, line); \
+        logger.forcedLog(logLevel, buf, getFileNameFromFullPath(filename).c_str(), line); \
     } \
 
 SGLog4cplus::SGLog4cplus()
