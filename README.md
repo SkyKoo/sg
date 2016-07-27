@@ -20,4 +20,4 @@ cfd project website(up-to-date):
 
 https://github.com/SkyKoo/sg
 
-project sponsor: Sky email: skylove.gcm@gmail.com
+project sponsor: Sky email: guchengming@live.cn
